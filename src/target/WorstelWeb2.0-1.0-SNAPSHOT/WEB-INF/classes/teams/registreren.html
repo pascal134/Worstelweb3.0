@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="registreren.css"></link>
+
+</head>
+<header>
+    <h1>WORSTELWEB</h1>
+    <nav>
+        <ul>
+            <li><a href="../../src/Main%20menu/Main%20menu.html">hoofdmenu</a> </li>
+            <li><a href="../worstelaar/openen.html">worstelaars</a>
+                <ul>
+                    <li><a href="../worstelaar/worstelaarregistreren.html">registreren</a> </li>
+                    <li><a href="../worstelaar/bewerken.html">bewerken</a> </li>
+                    <li><a href="../worstelaar/overzicht.html">overzicht</a> </li>
+
+                </ul>
+            </li>
+            <li><a href="../../src/shows/openen.html">shows</a>
+                <ul>
+                    <li><a href="../../src/shows/showsregistreren.html">registreren</a> </li>
+                    <li><a href="../../src/shows/showsbewerken.html">bewerken</a> </li>
+                    <li><a href="../../src/shows/overzicht.html">overzicht</a> </li>
+
+                </ul>
+            </li>
+            <li><a href="../../src/teams/openen.html">teams</a>
+                <ul>
+                    <li><a href="../../src/teams/registreren.html">registreren</a> </li>
+                    <li><a href="../../src/teams/bewerken.html">bewerken</a>
+                    <li><a href="../../src/teams/overzicht.html">overzicht</a> </li>
+
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<body>
+<dialog open>
+    <h2>registreer uw team</h2>
+    <div id="form1">
+        <form id="form">
+            <div id="labels">
+                <label for="teamnaam">teamnaam</label><br>
+                <label for="teamlid1">teamlid1</label><br>
+                <label for="teamlid2">teamlid2</label><br>
+                <label for="teamlid3">teamlid3</label><br>
+                <label for="teamlid4">teamlid4</label><br>
+                <label for="teamlid5">teamlid5</label><br>
+
+            </div>
+            <div id="input">
+                <input id="teamnaam"></input><br>
+                <input id="teamlid1"></input><br>
+                <input id="teamlid2"></input><br>
+                <input id="teamlid3"></input><br>
+                <input id="teamlid4"></input><br>
+                <input id="teamlid5"></input><br>
+
+            </div>
+            <div id="button1">
+                <button id=cancel type="button" class="crumb"><a href="../../src/teams/openen.html">>cancel</a></button>
+            </div>
+
+            <div id="button2">
+                <button id='btn' type="submit">team-registreren</button>
+            </div>
+            <script>
+                let teams = [];
+                // example {id:1592304983049, title: 'Deadpool', year: 2015}
+                const addteam = (ev)=>{
+                    ev.preventDefault();  //to stop the form submitting
+                    let team = {
+                        teamnaam: document.getElementById('teamnaam').value,
+                        teamlid1: document.getElementById('teamlid1').value,
+                        teamlid2: document.getElementById('teamlid2').value,
+                        teamlid3: document.getElementById('teamlid3').value,
+                        teamlid4: document.getElementById('teamlid4').value,
+                        teamlid5: document.getElementById('teamlid5').value
+                    }
+                    teams.push(team);
+                    document.forms[0].reset(); // to clear the form for the next entries
+                    //document.querySelector('form').reset();
+
+                    //saving to localStorage
+                    localStorage.setItem('myteamsList', JSON.stringify(teams) );
+                }
+                document.addEventListener('DOMContentLoaded', ()=>{
+                    document.getElementById('btn').addEventListener('click', addteam);
+                });
+            </script>
+
+        </form>
+    </div>
+
+
+</dialog>
+
+</script>
+
+</body>
+</html>

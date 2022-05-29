@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="bewerken.css"></link>
+
+</head>
+<header>
+  <h1>WORSTELWEB</h1>
+  <nav>
+    <ul>
+      <li><a href="../../src/Main%20menu/Main%20menu.html">hoofdmenu</a> </li>
+      <li><a href="openen.html">worstelaars</a>
+        <ul>
+          <li><a href="worstelaarregistreren.html">registreren</a> </li>
+          <li><a href="bewerken.html">bewerken</a> </li>
+          <li><a href="overzicht.html">overzicht</a> </li>
+
+        </ul>
+      </li>
+      <li><a href="../../src/shows/openen.html">shows</a>
+        <ul>
+          <li><a href="../../src/shows/showsregistreren.html">registreren</a> </li>
+          <li><a href="../../src/shows/showsbewerken.html">bewerken</a> </li>
+          <li><a href="../../src/shows/overzicht.html">overzicht</a> </li>
+
+        </ul>
+      </li>
+      <li><a href="../../src/teams/openen.html">teams</a>
+        <ul>
+          <li><a href="../../src/teams/registreren.html">registreren</a> </li>
+          <li><a href="../../src/teams/bewerken.html">bewerken</a>
+          <li><a href="../../src/teams/overzicht.html">overzicht</a> </li>
+
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+<body>
+<dialog open>
+  <h2>bewerk de worstelaar zijn gegevens</h2>
+  <div id="form">
+    <form>
+      <div id="labels">
+        <label for="naam">naam</label><br>
+        <label for="leeftijd">leeftijd</label><br>
+        <label for="geslacht">geslacht</label><br>
+        <label for="finisher">finisher</label><br>
+        <label for="show">show</label><br>
+      </div>
+      <div id="input">
+        <input id="naam"></input><br>
+        <input id="leeftijd"></input><br>
+        <div id="select">
+          <select id="geslacht">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </div>
+        </select><br>
+        <input id="finisher"></input><br>
+        <input id="show"></input><br>
+      </div>
+      <div id="button1">
+        <button id=atributen type="button"class="crumb"><a href="atributen-bewerken.html">>atributen</a></button>
+      </div>
+      <div id="button2">
+      <button id=bewerking type="button">bewerkingen opslaan</button>
+      </div>
+      <div id="button3">
+      <button id=cancel type="button" class="crumb"><a href="openen.html">>cancel</a></button>
+
+      </div>
+
+
+    </form>
+  </div>
+
+
+</dialog>
+
+</body>
+</html>

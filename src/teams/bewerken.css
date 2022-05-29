@@ -1,0 +1,134 @@
+body{background-image: url("../../images/tryout.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#labels{
+    height:100px;
+    width: 140px;
+    float:left;
+}
+#input{    height:100px;
+    width: 70px;
+    float:left;
+}
+#button1{
+    height:190px;
+    width: 140px;
+    float:left;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    display: inline-block;
+    top: 210px;
+    left: 170px;
+}
+#button2{
+    height:190px;
+    width: 140px;
+    float:right;
+    padding: 10px;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    top: 210px;
+    right: 140px;
+}
+dialog{
+    height: 240px;
+    width: 330px;
+    margin: 10px auto;
+    position: relative;
+    top:150px;
+    right: 140px;
+}
+body,html {
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color: blue;
+    color: #ffffff;
+
+}
+ul{
+    width: auto;
+    float: left;
+    color: #ffffff;
+    margin-top: 8px;
+    font-size: 1.2vw;
+
+}
+li{
+    display: inline-block;
+    padding: 15px 30px;
+    color: #ffffff;
+
+    font-size: 1.2vw;
+
+}
+a{
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+
+}
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+
+
+}
+
+nav ul li a{
+    font-size: 1.2vw;
+    color: #ffffff;
+    display:block;
+
+
+}
+nav ul li ul{
+    display:none;
+    position: absolute;
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+nav ul li:hover ul{
+    display: block;
+}
+
+
+h1{position: relative;
+    padding: 3px;
+    float: right;
+    margin-left: 2%;
+    margin-top: 10px;
+
+}
+span{
+    color: blue;
+}
+a:hover{
+    color: #ac3333;
+    transition: 0.5S;
+}
+
+img{
+    width: 100%;
+    margin-top: -16px;
+}
+label{line-height: 20px;}
+
+
+
+
+
+

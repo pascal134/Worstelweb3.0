@@ -1,0 +1,177 @@
+body{background-image: url("../../images/wp3051029.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section{
+    position: relative;
+    width: 100%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#registreren{
+    height: 70px;
+    width: 180px;
+}
+#bewerken{
+    height: 70px;
+    width: 180px;
+}
+#hoofdmenu{
+    height: 70px;
+    width: 180px;
+}
+#overzicht{
+    height: 70px;
+    width: 180px;
+}
+dialog{
+    border-color: transparent;
+    background-color: transparent;
+    top: 420px;
+    z-index: 1;
+}
+nav{z-index: 2;}
+.video-container{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+}
+body,html {
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color: blue;
+    z-index: 4;
+}
+ul{
+    width: auto;
+    float: right;
+    color: #ffffff;
+    margin-top: 8px;
+    font-size: 1.2vw;
+
+}
+li{
+    display: inline-block;
+    padding: 15px 30px;
+    color: #ffffff;
+
+    font-size: 1.2vw;
+
+}
+a{
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+
+}
+h1{position: absolute;
+    padding: 3px;
+    float: left;
+    margin-left: 2%;
+    margin-top: 10px;
+    z-index: 8;
+
+
+}
+span{
+    color: blue;
+    z-index: 9;
+
+}
+a:hover{
+    color: #ac3333;
+    transition: 0.5S;
+    z-index: 10;
+
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color: blue;
+    color: #ffffff;
+
+}
+ul{
+    width: auto;
+    float: left;
+    color: #ffffff;
+    margin-top: 8px;
+    font-size: 1.2vw;
+
+}
+li{
+    display: inline-block;
+    padding: 15px 30px;
+    color: #ffffff;
+
+    font-size: 1.2vw;
+
+}
+a{
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+
+}
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+
+
+}
+
+nav ul li a{
+    font-size: 1.2vw;
+    color: #ffffff;
+    display:block;
+
+
+}
+nav ul li ul{
+    display:none;
+    position: absolute;
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+nav ul li:hover ul{
+    display: block;
+}
+
+
+h1{position: relative;
+    padding: 3px;
+    float: right;
+    margin-left: 2%;
+    margin-top: 10px;
+
+}
+span{
+    color: blue;
+}
+a:hover{
+    color: #ac3333;
+    transition: 0.5S;
+}
+
+img{
+    width: 100%;
+    margin-top: -16px;
+}
+

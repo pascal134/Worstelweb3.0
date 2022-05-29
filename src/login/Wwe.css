@@ -1,0 +1,11 @@
+body{background-image:url("../../images/main-menu.jpg");
+background-size: cover;
+    background-repeat: no-repeat;
+}
+dialog{
+    display: block;
+    margin: auto;
+    margin-top:220px;
+
+}
+dialog{background-color: beige}
